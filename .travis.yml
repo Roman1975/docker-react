@@ -10,7 +10,7 @@ script:
   - docker run -e CI=true roman1975/docker-react npm run test -- --coverage
 
 deploy:
-  provide: elasticbeanstalk
+  provider: elasticbeanstalk
   region: "eu-west-1"
   app: "docker-react-aws"
   env: "DockerReactAws-env"
